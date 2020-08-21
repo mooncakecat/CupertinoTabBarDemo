@@ -30,10 +30,12 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   var navigatorKeyList = [GlobalKey<NavigatorState>(), GlobalKey<NavigatorState>()];
   var currentIndex = 0;
+  var controller = CupertinoTabController(initialIndex: 0);
 
   @override
   Widget build(BuildContext context) {
     return CupertinoTabScaffold(
+      controller: controller,
       tabBar: CupertinoTabBar(
         onTap: (index) {
           if (currentIndex == index) {
@@ -68,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
               navigatorKey: navigatorKeyList[index],
               routes: {
                 '/': (context) => WillPopScope(
-                      child: Page2(),
+                      child: Page2(controller),
                       onWillPop: () => Future<bool>.value(true),
                     )
               },
