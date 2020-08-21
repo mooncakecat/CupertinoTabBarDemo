@@ -1,3 +1,4 @@
+import 'package:cupertino_tab_bar/base_widget.dart';
 import 'package:flutter/material.dart';
 
 class Page1c extends StatelessWidget {
@@ -5,8 +6,10 @@ class Page1c extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('Page1c', style: Theme.of(context).textTheme.display1),
+    return BaseContainer(
+      Container(
+        child: Text('Page1c', style: Theme.of(context).textTheme.display1),
+      ),
     );
   }
 }

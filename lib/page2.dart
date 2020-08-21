@@ -1,3 +1,4 @@
+import 'package:cupertino_tab_bar/base_widget.dart';
 import 'package:flutter/material.dart';
 
 class Page2 extends StatelessWidget {
@@ -5,8 +6,8 @@ class Page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('Page2'),
+    return BaseContainer(
+      Container(child: Text('Page2')),
     );
   }
 }
