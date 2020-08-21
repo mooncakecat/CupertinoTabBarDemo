@@ -8,7 +8,7 @@ class Page1c extends StatelessWidget {
   Widget build(BuildContext context) {
     return BaseContainer(
       Container(
-        child: Text('Page1c', style: Theme.of(context).textTheme.display1),
+        child: Text('Tab1 Page3', style: Theme.of(context).textTheme.headline4),
       ),
     );
   }

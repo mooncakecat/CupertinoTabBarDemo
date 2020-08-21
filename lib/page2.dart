@@ -7,7 +7,23 @@ class Page2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BaseContainer(
-      Container(child: Text('Page2')),
+      Column(
+        children: <Widget>[
+          Container(
+            child: Text(
+              'Tab2',
+              style: Theme.of(context).textTheme.headline4,
+            ),
+          ),
+          FlatButton(
+            color: Colors.lightGreen,
+            child: Text('Go to Tab1 Page2 (TODO)'),
+            onPressed: () {
+              // TODO
+            },
+          )
+        ],
+      ),
     );
   }
 }

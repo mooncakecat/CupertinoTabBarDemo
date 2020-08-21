@@ -11,12 +11,13 @@ class Page1 extends StatelessWidget {
         children: <Widget>[
           Container(
             child: Text(
-              'page1',
-              style: Theme.of(context).textTheme.display1,
+              'Tab1',
+              style: Theme.of(context).textTheme.headline4,
             ),
           ),
           FlatButton(
-            child: Text('Go to page 1b'),
+            color: Colors.lightGreen,
+            child: Text('Go to Tab1 Page2'),
             onPressed: () {
               Navigator.pushNamed(context, 'page1b');
             },
